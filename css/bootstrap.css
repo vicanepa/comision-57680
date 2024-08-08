@@ -7,10 +7,6 @@
 body{
     width: 100%;
 }
-.container{
-    max-width: 90%;
-    margin: auto;
-}
 
 .header-principal{
     background-repeat: no-repeat;
@@ -20,48 +16,54 @@ body{
     position: relative;
 }
 
-.header-principal img{
-    width: 10rem;
-    height: 10rem;
+/* ----------NAV--------- */
+.img-logo{
+    width: 7rem;
+    height: 7rem;
 }
 
-.ul{
-    list-style: none;
-    gap: 1rem;
+.navbar-nav a{
+    color: white;
 }
 
-ul li a{
+.nav-item{
     font-family: "Roboto Condensed", sans-serif;
     text-decoration:none;
     background-color: rgba(0, 0, 0, 0.25);
-    padding: 1rem 2rem 1rem 2rem;
+    padding: .5rem 1rem .5rem 1rem;
     border-radius: 5rem;
     font-weight: bold;
-    transition: background .3s ease;
-}
+    transition: background .3s ease; 
+    font-size: 1rem;
 
-ul li a:hover{
-    background-color: rgba(0, 0, 0, 0.50);
 }
-.activo{
+.navegacion-link{
+    text-decoration: none;
+}
+.navegacion-link active{
+    color: white;
+   
     background-color: rgba(0, 0, 0, 0.50);
     -webkit-box-shadow: 8px 10px 14px -3px rgba(0,0,0,0.5);
     -moz-box-shadow: 8px 10px 14px -3px rgba(0,0,0,0.5);
     box-shadow: 8px 10px 14px -3px rgba(0,0,0,0.5);
 }
+.nav-item:hover{
+    background-color: rgba(0, 0, 0, 0.50);
+}
 
+/* ----------SECTION--------- */
 .section-1 h1{
     font-family: "Bebas Neue", sans-serif;
     font-size: 8.75rem;
     color: white;
     margin-top: 10rem;
     padding-left: 4rem;
-    }
+}
 
 .section-1 p{
     font-family: "Bebas Neue", sans-serif;
     font-size: 2.25rem;
-    color: white;
     text-shadow: .5625rem .3125rem .2938rem rgba(0, 0, 0, 0.404);
 }
     
@@ -192,3 +194,191 @@ footer h2{
     width: 100%;
     height: 7.875rem;
 }
+
+/* --------- MEDIA QUERIES INDEX -------- */
+
+@media (max-width:2560px){
+    .header-principal{
+    padding-bottom: 8rem;
+    }
+}
+
+@media (max-width:1440px){
+    .header-principal{
+        padding-bottom: 3rem;
+    }    
+    .div-excursiones{
+        gap: 5rem;
+    }
+    .container-excursiones{
+        max-width: 85%;
+        margin: auto;
+    }
+}
+
+@media(max-width:1230px){
+    .container{
+        max-width: 100%;
+    }
+    .div-excursiones{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info-encabezado p{
+        font-size: 1.8rem;
+    }
+    .header-principal{
+        padding-bottom: .5rem;
+    }
+}
+
+@media(max-width:1020px){
+    .header-principal{
+        padding-bottom: 6rem;
+    }  
+
+    .info-encabezado{
+        display: none;
+    }
+    
+    .section-1 h1{
+        font-size: 6rem;
+        text-align: center;
+        margin-top: 8rem;
+        padding-left: 0;
+    }
+}
+
+@media(max-width:790px) {
+    .container-excursiones{
+        width: 70%;
+    }
+    .barra-interes{
+        padding: 5rem;
+    }
+    .barra-interes input{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .btn-buscador img{
+        width: 2rem;
+    }
+    .barra-interes div{
+        padding: 1.5rem 3rem 1.5rem 3rem;
+    }
+    .div-excursiones{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}   
+
+@media (max-width:768px){
+    .section-propuestas{
+        max-width: 95%;
+        margin: auto;
+    }
+}
+
+@media(max-width:480px) {
+
+    .div-excursiones{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .info-encabezado{
+        display: none;
+    }
+
+    .section-1 h1{
+        padding-bottom: 10rem;
+        font-size: 5rem;
+        margin-top: 5rem;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .info-pie-de-pag h2{
+    font-size: 1.5rem;
+        }
+    .iconos-pie-de-pag{
+        margin-bottom: 2rem;
+        margin-top: 1.5rem;
+        gap: 3rem;
+    }
+    footer p{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:480px) {
+    .section-1 h1{
+        padding-bottom: 5rem;
+    }
+    .barra-interes{
+        padding: 2rem;
+    }
+
+    .barra-interes.container{
+        width: 60%;
+    }
+    .barra-interes div{
+        padding: 1.5rem 2rem;
+    }
+}
+@media(max-width:420px) {
+    .barra-interes div{
+        padding: 1.2rem 1rem;
+    }
+}
+@media(max-width:375px) {
+    .section-1 h1{
+        font-size: 3.5rem;
+    }
+    .barra-interes div{
+        padding: 1.2rem 1rem;
+    }
+
+    .barra-interes input{
+        font-size: 1.1rem;
+    }
+
+    .img-producto img{
+        height: 20rem;
+        width: 20rem
+    }
+    
+}
+
+@media(max-width:352px) {
+    .section-1 h1{
+        font-size: 3rem;
+    }
+
+    .barra-interes div{
+        padding: .8rem 1rem;
+        gap: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width:320px) {
+    .section-1 h1{
+        font-size: 3rem;
+    }
+    .barra-interes div{
+        padding: .8rem 1rem;
+        gap: 0;
+        margin-bottom: 0;
+    }
+
+    .img-producto img{
+        width: 18rem;
+    }
+
+    .barra-interes input{
+        font-size: 1rem;
+    }
+}
+

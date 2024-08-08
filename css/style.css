@@ -45,7 +45,7 @@ body{
     background-size: cover;
     background-position: bottom;
     position: relative;
-    background: linear-gradient(0deg, rgba(24, 33, 38, 0.00) 0%, rgba(24, 33, 38, 0.00) 100%), url(../assets/img/img-encab-ultimo.png) lightgray 0px -752px / 161.126% 178.091% no-repeat;
+    background: linear-gradient(0deg, rgba(24, 33, 38, 0.00) 0%, rgba(24, 33, 38, 0.00) 100%), url(../assets/img/img-encab-ultimo.png)  0px -752px / 161.126% 178.091% no-repeat;
 }
 
 /* --------------- BARRA NAV ----------- */
@@ -207,6 +207,24 @@ text-shadow: 17px 8px 6.1px rgba(0, 0, 0, 0.30);
     gap: 2rem;
 }
 
+.link-bootstrap a{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5rem;
+    color: #434141;
+    padding: 2rem 8rem 2rem 8rem;
+    border-radius: 3.25rem;
+    background: rgba(86, 85, 85, 0.3);
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 10px 5px 10px 0px rgba(39, 39, 39, 0.59);
+}
 
 /* .............PAGINA EXCURSIONES........... */
 
@@ -235,7 +253,7 @@ text-shadow: 17px 8px 6.1px rgba(0, 0, 0, 0.30);
     text-align: center;
     margin-top: 10rem;
 }
-.espacio-prueba{
+.espacio-card-derecha{
     padding-left: 5rem;
 }
 .excursiones-card-info{
@@ -456,25 +474,80 @@ text-shadow: 17px 8px 6.1px rgba(0, 0, 0, 0.30);
     color: rgb(108, 98, 98);
     text-shadow: .5625rem .3125rem .2938rem rgba(0, 0, 0, 0.25);
 }
+                         /* ----FORM------ */
 
-.form{
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 1.875rem;
-    color: #474747;
-    line-height: 165%;
+.formulario-consulta{
+    background-color: #e0dede;
+    background-image: url(../assets/img/torre-form.png);
+    background-blend-mode: overlay;
+    padding: 3.125rem 3.4375rem;
+    box-shadow:  0 0 1.25rem rgba(0, 0, 0, 0.2);
+    border-radius: 1.25rem;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.input-group-form{
     display: flex;
     flex-direction: column;
-
+    text-align: left;
+    margin-top: 5rem;
 }
-.p-de-form{
-    font-family: "Roboto Condensed", sans-serif;
+
+.p1-form, .p2-form{
+    color: #592159;
     font-size: 1.5625rem;
-    line-height: 165%;
+    font-family: "Bebas Neue", sans-serif;
     display: flex;
     flex-direction: column-reverse;
     text-align: right;
 }
 
+.p2-form{
+    color: #474747;
+}
+
+.input-group-form label{
+    color: #474747;
+    font-family: "Bebas Neue", sans-serif;;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    font-weight: 600;
+    margin-bottom: .9375rem;
+}
+
+.input-group-form input, textarea{
+padding: 1.0625rem 1.5625rem;
+border-radius: 1.5625rem;
+margin-bottom: 1.25rem;
+background-color: #ffffff;
+border: .125rem solid #7c67816b;
+color: rgb(83, 82, 82);
+outline: none;
+font-size: 1rem;
+}
+
+.input-group-form input::placeholder, textarea::placeholder{
+    color: #58555797;
+}
+
+.btn-enviar{
+    font-size: 1.5rem;
+    color: white;
+    border: 0;
+    border-radius: 1.5625rem;
+    box-shadow: 0 0 1.25rem rgba(176, 135, 198, 0.241);
+    cursor: pointer;
+}
+
+.btn-enviar:hover{
+    background-color: #78697a;
+    color: white;
+
+}
 /* .............PAG NOSOTROS........... */
 
 .main-nosotros{
@@ -491,7 +564,6 @@ text-shadow: 17px 8px 6.1px rgba(0, 0, 0, 0.30);
     line-height: normal;
     text-transform:uppercase;
     text-wrap: balance;
-    margin: 15rem 15rem;
 }
 
 /* ..............PIE DE PAG.......... */
@@ -636,6 +708,7 @@ footer h2{
     .container-nav img{
         display: none;
     }
+
     .ul{
         display: flex;
         flex-direction: column;
@@ -643,7 +716,7 @@ footer h2{
         align-items: center;
         gap: 3rem;
         margin-top: 2rem;
-    } 
+} 
 }
 
 @media(max-width:480px) {
@@ -652,7 +725,6 @@ footer h2{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-
 
     .info-encabezado{
         display: none;
@@ -668,18 +740,19 @@ footer h2{
 
     .info-pie-de-pag h2{
     font-size: 1.5rem;
-        }
+    padding-top: 2rem;
+    }
+
     .iconos-pie-de-pag{
         margin-bottom: 2rem;
         margin-top: 1.5rem;
         gap: 3rem;
     }
-    footer p{
+
+    .footer p{
         font-size: 1rem;
     }
-}
 
-@media(max-width:480px) {
     .section-1 h1{
         padding-bottom: 5rem;
     }
@@ -694,6 +767,7 @@ footer h2{
         padding: 1.5rem 2rem;
     }
 }
+
 @media(max-width:420px) {
     .barra-interes div{
         padding: 1.2rem 1rem;
@@ -900,4 +974,114 @@ footer h2{
         padding: .5rem;
         line-height: 1.5rem;
     }
+}
+
+/* --------MEDIA QUERIES PAG NOSOTROS---- */
+
+@media(max-width:1440px){
+.main-nosotros{
+    width: 95%;
+}
+
+.section-1 h1{
+    padding-left: 0;
+}
+}
+
+@media(max-width:1054px){
+    .section-1 h1{
+        font-size: 6rem;
+    }
+
+    .main-nosotros{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media(max-width:1024px){
+.section-1 h1{
+    font-size: 7rem;
+    margin-top: 4rem;
+}
+
+.info-encabezado{
+    margin-top: 3rem;
+}
+.info-encabezado p{
+    font-size: 1.4rem;
+}
+
+.header-nosotros{
+    height: 60rem;
+}
+
+.main-nosotros{
+    margin: auto;
+    gap: 3rem;
+}
+.main-nosotros img{
+    width: 60%;
+}
+}
+
+@media(max-width:1054px){
+    .section-1 h1{
+        font-size: 5rem;
+    }
+
+    .main-nosotros{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media(max-width:768px){
+    .header-nosotros{
+        height: 60rem;
+    }
+
+    .section-1 h1{
+        font-size: 4rem;
+        margin-top: 5rem;
+    }
+
+    .main-nosotros{
+        width: 90%;
+        margin: auto;
+        font-size: 1.5rem;
+    }
+
+    .main-nosotros img{
+        width: 70%;
+    }
+}
+
+@media(max-width:425px){
+.section-1 h1{
+    display: none;
+}
+
+.header-nosotros {
+    height: 45rem;
+}
+
+.main-nosotros{
+    margin-top: -8rem;
+    font-size: 1.2rem;
+}
+
+.iconos-pie-de-pag img {
+    width: 2rem;
+}
+.wave-pie-de-pag{
+    display: none;
+}
+}
+
+
+@media(max-width:320px){
+.iconos-pie-de-pag img {
+    width: 1.5rem;
+}
 }

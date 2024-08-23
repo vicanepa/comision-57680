@@ -1,0 +1,18 @@
+@media(max-width:1230px){
+    // INDEX //
+    .header-principal{
+        padding-bottom: .5rem;
+    }
+
+    .info-encabezado{
+        p{
+            font-size: 1.8rem;
+        }
+    }
+    
+    .main-index{
+        .div-excursiones{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}

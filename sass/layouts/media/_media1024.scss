@@ -1,0 +1,53 @@
+
+@media(max-width:1024px) {
+    // PRECIOS //
+
+    .container-nav{
+        flex-wrap: nowrap;
+    }
+
+    .main-precios{
+        .container-precios{
+            width: 90%;
+        }    
+
+        .precios{
+            .precios-titulo{
+                flex-direction: column;
+                gap: 3rem;
+            }
+        }
+    }
+    
+    
+
+    // NOSOTROS //
+    .header-nosotros{
+        height: 60rem;
+    }
+
+    .section-nosotros{
+        
+            font-size: 7rem;
+            margin-top: 4rem;
+        
+    } 
+    
+    .info-encabezado-nosotros{
+        margin-top: 3rem;
+
+        p{
+            font-size: 1.4rem;
+        }
+    }
+
+    .main-nosotros{
+        margin: auto;
+        gap: 3rem;
+
+        img{
+            width: 60%;
+        }
+    }
+}
+

@@ -1,0 +1,110 @@
+@media (max-width:768px){
+    // INDEX //
+    .header-principal{
+        padding-bottom: 2rem;
+    }
+    
+    .container-nav{
+        display: flex;
+        flex-direction: column;
+        padding-right: 0;
+        justify-content: center;
+
+        img{
+            display: none;
+        }
+    }
+
+    .ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 2rem;
+    } 
+
+    .main-index{
+        .section-excursiones{
+            max-width: 95%;
+            margin: auto;
+        }
+    }
+
+    // PRECIOS //
+
+    .header-secundario{
+        height: 40rem;
+    }
+
+    .main-precios{
+        .section-precios{
+            li{
+                margin-left: 2rem;
+            }
+        }
+
+        .precios{
+            padding: 3rem;
+    
+            p, li{
+                font-size: 1.6rem;
+            }
+
+            .precios-titulo{
+                h2{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .section-precios{
+            h1{
+                margin-top: 0;
+                padding-left: 0;
+                font-size: 1.8rem;
+                text-align: center;
+                letter-spacing: .3rem;
+                text-shadow: .5625rem .3125rem .2938rem rgba(0, 0, 0, 0.114);
+            }
+        }
+    }
+    .ultima-caja-info-precios{
+        .info-p-precios{
+            padding-left: .5rem;
+    
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    
+    // NOSOTROS //
+
+    .header-nosotros{
+        height: 60rem;
+    }
+
+    .section-nosotros{
+        h1{
+            font-size: 4rem;
+            margin-top: 5rem;
+        }
+    } 
+
+    .main-nosotros{
+        width: 90%;
+        margin: auto;
+        font-size: 1.5rem;
+
+        img{
+            width: 70%;
+        }
+    }
+
+    // FOOTER //
+
+    .info-pie-de-pag h2{
+        font-size: 2rem;
+    }
+}

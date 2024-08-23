@@ -1,0 +1,33 @@
+@media(max-width:790px) {
+    // INDEX //
+    .header-principal{
+        padding-bottom: 3rem;
+    }
+    
+    .main-index{
+        .barra-interes{
+            padding: 5rem;
+    
+            div{
+                padding: 1.5rem 3rem 1.5rem 3rem;
+            }
+            input{
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+    
+            .btn-buscador{
+                img{
+                    width: 2rem;
+                }
+            }
+        }
+        .container-excursiones{
+            width: 70%;
+        }
+
+        .div-excursiones{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}   

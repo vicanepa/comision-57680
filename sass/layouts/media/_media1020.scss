@@ -1,0 +1,78 @@
+@media(max-width:1020px){
+    // INDEX //
+
+    .header-principal {
+        padding-bottom: 6rem;
+    }
+
+    .container-nav{
+        flex-direction: column;
+        img{
+            display: none;
+        }
+
+        ul{
+            @include flex(column,none,center,center,3rem);
+            margin-top: 2rem;
+        }
+    }
+    
+    .section-1{
+        h1{
+            font-size: 5rem;
+            text-align: center;
+            margin-top: 8rem;
+            padding-left: 0;
+        }
+
+        .info-encabezado{
+            p{
+                display: none;
+            }
+            
+        }
+    }
+
+    
+
+    // PRECIOS //
+
+    .header-secundario{
+        height: 40rem;
+    }
+
+    .ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 2rem;
+    } 
+    
+
+    .main-precios{
+        .section-precios{
+            h1{
+                margin-top: 5rem;
+                padding-left: 0;
+                font-size: 1.8rem;
+                text-align: center;
+            }
+        }
+    }
+    
+
+    // NOSOTROS //
+
+    .section-nosotros{
+        h1{
+            font-size: 5rem;
+        }
+    }
+
+    .main-nosotros{
+        width: 90%;
+        margin: auto;
+    }
+}

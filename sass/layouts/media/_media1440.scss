@@ -1,0 +1,26 @@
+@media (max-width:1440px){
+    // INDEX //
+    .header-principal{
+        padding-bottom: 3rem;
+    }    
+    .main-index{
+        .div-excursiones{
+            gap: 5rem;
+        }
+
+        .container-excursiones{
+            max-width: 85%;
+        }
+    }
+    // NOSOTROS //
+
+    .section-nosotros{
+        h1{
+            padding-left: 0;
+        }
+    }
+
+    .main-nosotros{
+        width: 95%;
+    }
+}

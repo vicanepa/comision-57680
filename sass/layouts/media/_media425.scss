@@ -1,0 +1,93 @@
+@media(max-width:425px){
+    // PRECIOS //
+    .main-precios{
+
+        .section-precios{
+            li{
+                margin-left: 1rem;
+            }
+        }
+
+        .section-precios{
+            h1{
+                margin-top: 0;
+                padding-left: 0;
+                font-size: 1.5rem;
+                text-align: center;
+                letter-spacing: .3rem;
+            }
+        }
+
+        .precios{
+            padding: 3rem;
+    
+            p, li{
+                font-size: 1.2rem;
+                padding: 0;
+            }
+
+            h2{
+                    font-size: 1.4rem;
+                }
+            
+        }
+    }
+
+    .ultima-caja-info-precios{
+        .h2-medios-de-pago{
+            h2{
+                font-size: 1.6rem;
+                margin-top: 5rem;
+            }
+        }
+
+        .info-p-precios{
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    // NOSOTROS //
+
+    .header-nosotros {
+        height: 45rem;
+    }
+    
+    .section-nosotros{
+        h1{
+            display: none;
+        }
+    }
+    
+    .main-nosotros{
+        margin-top: -8rem;
+        font-size: 1.2rem;
+    }
+
+    // FOOTER //
+
+    .wave-pie-de-pag{
+        display: none;
+    }
+
+    .info-pie-de-pag{
+        h2{
+            font-size: 1.5rem;
+        }
+    }
+    
+    .iconos-pie-de-pag{
+        margin-bottom: 2rem;
+        margin-top: 1.5rem;
+        gap: 3rem;
+
+        img {
+            width: 2rem;
+        }
+    }
+    
+    footer p{
+        font-size: 1rem;
+    }
+}

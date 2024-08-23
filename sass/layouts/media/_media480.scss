@@ -1,0 +1,53 @@
+@media(max-width:480px) {
+    // INDEX //
+    
+    .section-1{
+        h1{
+            font-size: 5rem;
+            margin-top: 5rem;
+            padding-left: 0;
+            text-align: center;
+            padding-bottom: 5rem;
+        }
+    }
+
+    .info-encabezado{
+        display: none;
+    }
+
+    .main-index{
+        .barra-interes{
+            padding: 2rem;
+    
+            div{
+                padding: 1.5rem 2rem;
+            }
+        }
+
+        .div-excursiones{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    // FOOTER //
+
+    .info-pie-de-pag{
+        h2{
+        font-size: 1.5rem;
+        padding-top: 2rem;
+        }
+    }
+
+    .iconos-pie-de-pag{
+        margin-bottom: 2rem;
+        margin-top: 1.5rem;
+        gap: 3rem;
+    }
+
+    footer{
+        p{
+            font-size: 1rem;
+        }
+    }
+}

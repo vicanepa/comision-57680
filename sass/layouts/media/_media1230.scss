@@ -15,4 +15,18 @@
             grid-template-columns: repeat(2,1fr);
         }
     }
+
+    .header-nosotros{
+        .section-nosotros{
+            h1{
+                font-size: 6rem;
+            }
+        }
+    }
+
+
+    // NOSOTROS //
+    .header-nosotros{
+        height: 60rem;
+    }
 }

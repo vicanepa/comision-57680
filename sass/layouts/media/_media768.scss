@@ -24,6 +24,10 @@
         margin-top: 2rem;
     } 
 
+    .section-1{
+        height: 15rem;
+    }
+
     .main-index{
         .section-excursiones{
             max-width: 95%;
@@ -48,12 +52,12 @@
             padding: 3rem;
     
             p, li{
-                font-size: 1.6rem;
+                font-size: 1.2rem;
             }
 
             .precios-titulo{
                 h2{
-                    font-size: 1.6rem;
+                    font-size: 1.4rem;
                 }
             }
         }
@@ -79,10 +83,28 @@
         }
     }
     
+    // CONTACTO //
+
+    .main-contacto{
+        h2{
+            font-size: 1.5rem;
+            text-align: center;
+            margin-top: 0;
+            padding-left: 0;
+        }
+
+        form{
+            width: 70%;
+            background-size: 30rem;
+            background-position-x: 5rem;
+            background-position-y: 15rem;
+        }
+    }
+
     // NOSOTROS //
 
     .header-nosotros{
-        height: 60rem;
+        height: 55rem;
     }
 
     .section-nosotros{
@@ -104,7 +126,11 @@
 
     // FOOTER //
 
-    .info-pie-de-pag h2{
-        font-size: 2rem;
+    footer{
+        .info-pie-de-pag{
+            h2{
+                font-size: 2rem;
+            }
+        }
     }
 }

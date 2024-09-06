@@ -28,30 +28,50 @@
 
     // PAG PRECIOS //
 
-    .h2-precios{
-        font-size: 1rem;
-    }
-    .precio-valor p{
-        font-size: 1rem;
+    .main-precios{
+        .precios{
+            .precios-titulo{
+                h2{
+                font-size: 1rem;
+                }
+            }
+
+            .precio-valor p{
+                font-size: .8rem;
+            }
+
+            p, li{
+                font-size: .8rem;
+            }
+        }
+
+        .ultima-caja-info-precios{
+            .h2-medios-de-pago{
+                font-size: 1.4rem;
+            }
+
+            .info-p-precios{
+                padding: .4rem;
+                line-height: 1.5rem;
+                img{
+                    width: 2rem;
+                }
+                p{
+                    font-size: .8rem;
+                }
+            }
+        }
     }
 
-    .precios p, li{
-        font-size: 1rem;
-    }
-
-    .h2-medios-de-pago{
-        font-size: 1.4rem;
-    }
-
-    .p-precios{
-        padding: .5rem;
-        line-height: 1.5rem;
-    }
-    
     // FOOTER//
-    .iconos-pie-de-pag{
-        img {
-            width: 1.5rem;
+    footer{
+        .info-pie-de-pag{
+            .iconos-pie-de-pag{
+                img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
         }
     }
 }

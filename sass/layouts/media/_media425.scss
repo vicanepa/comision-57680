@@ -22,14 +22,16 @@
             padding: 3rem;
     
             p, li{
-                font-size: 1.2rem;
+                font-size: 1rem;
                 padding: 0;
             }
 
-            h2{
-                    font-size: 1.4rem;
+            .precios-titulo{
+                h2{
+                    font-size: 1.2rem;
+                    text-align: center;
                 }
-            
+            }
         }
     }
 
@@ -44,6 +46,16 @@
         .info-p-precios{
             p{
                 font-size: 1rem;
+            }
+        }
+    }
+
+    // CONTACTO //
+
+    .main-contacto{
+        form{
+            .p1-form{
+                text-align: center;
             }
         }
     }
@@ -67,27 +79,18 @@
 
     // FOOTER //
 
-    .wave-pie-de-pag{
-        display: none;
-    }
-
-    .info-pie-de-pag{
-        h2{
-            font-size: 1.5rem;
+    footer{
+        .wave-pie-de-pag{
+            display: none;
         }
-    }
     
-    .iconos-pie-de-pag{
-        margin-bottom: 2rem;
-        margin-top: 1.5rem;
-        gap: 3rem;
-
-        img {
-            width: 2rem;
+        .info-pie-de-pag{
+            .iconos-pie-de-pag{
+                img {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
         }
-    }
-    
-    footer p{
-        font-size: 1rem;
     }
 }

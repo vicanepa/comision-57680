@@ -12,15 +12,60 @@
             max-width: 85%;
         }
     }
+
+    // EXCURSIONES //
+
+    .main-excursiones{
+        .h1-excursiones{
+            font-size: 2rem;
+        }
+
+        .excursiones-card{
+            h2, h3{
+                width: 90%;
+                margin: auto;
+            }
+
+            .excursiones-card-info{
+                ul{
+                    font-size: 1.5rem;
+                    margin-right: 2rem;
+                }
+            }
+        }
+
+        .excursiones-card-2{
+            h2, h3{
+                width: 90%;
+                margin: auto;
+            }
+
+            .excursiones-card-info-Derecha{
+                ul{
+                    font-size: 1.5rem;
+                } 
+
+                img{
+                    width: 780px;
+                }
+            }
+        }
+
+    }
+
     // NOSOTROS //
 
-    .section-nosotros{
-        h1{
-            padding-left: 0;
+    .header-nosotros{
+
+        .section-nosotros{
+            h1{
+                padding-left: 0;
+            }
         }
     }
 
     .main-nosotros{
         width: 95%;
+        margin-inline: auto;
     }
 }

@@ -1,4 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    letter-spacing: normal;
+    opacity: 1; } }
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
 * {
   /* recetea el sitio */
   margin: 0;
@@ -24,7 +44,7 @@
 .container-nav {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: none;
   justify-content: space-between;
   align-items: center;
   gap: none; }
@@ -64,6 +84,10 @@
   color: white;
   margin-top: 10rem;
   padding-left: 4rem; }
+
+.section-1 .tracking-in-contract {
+  -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
 
 .section-1 .info-encabezado {
   display: flex;
@@ -105,8 +129,11 @@
   color: white;
   text-transform: none;
   margin-top: 10rem;
-  padding-left: 4rem;
   text-shadow: 17px 8px 6.1px rgba(0, 0, 0, 0.3); }
+
+.section-nosotros .text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
 
 .section-nosotros .info-encabezado-nosotros {
   display: flex;
@@ -163,7 +190,8 @@
   object-fit: contain;
   justify-content: space-around;
   text-align: center;
-  margin-top: 8rem; }
+  margin-top: 8rem;
+  margin-bottom: 8rem; }
 
 .main-index .div-excursiones {
   display: grid;
@@ -179,7 +207,8 @@
     box-shadow: 10px 8px 9px -5px rgba(0, 0, 0, 0.43);
     width: 100%;
     height: 100%;
-    justify-content: space-around; }
+    justify-content: space-around;
+    overflow: hidden; }
   .main-index .div-excursiones a {
     font-family: "Bebas Neue", sans-serif;
     font-size: 1.2rem;
@@ -190,6 +219,8 @@
     padding: 1.5rem 1rem 1.5rem 1rem;
     text-decoration: none;
     border-radius: 5rem; }
+    .main-index .div-excursiones a:hover {
+      transform: scale(1, 1.1); }
   .main-index .div-excursiones article {
     display: grid;
     gap: 2rem; }
@@ -200,9 +231,10 @@
   text-align: none;
   color: #6c6262;
   text-transform: none;
+  letter-spacing: .5rem;
   margin-top: 10rem;
   padding-left: 5rem;
-  text-shadow: 0.5625rem 0.3125rem 0.2938rem rgba(0, 0, 0, 0.25); }
+  text-shadow: 0.5625rem 0.3125rem 0.2938rem rgba(0, 0, 0, 0.2); }
 
 .excursiones-card {
   font-size: 2rem;
@@ -329,7 +361,7 @@
   margin-top: 10rem;
   margin-bottom: 5rem;
   padding-left: 5rem;
-  text-shadow: 0.5625rem 0.3125rem 0.2938rem rgba(0, 0, 0, 0.25); }
+  text-shadow: 0.5625rem 0.3125rem 0.2938rem rgba(0, 0, 0, 0.2); }
 
 .main-precios .section-precios li {
   margin-left: 5rem; }
@@ -350,7 +382,7 @@
     margin-bottom: 3rem; }
   .main-precios .precios h2 {
     font-family: "Roboto Condensed", sans-serif;
-    font-size: 2.25rem;
+    font-size: 1.8rem;
     text-align: none;
     color: #555050;
     text-transform: uppercase; }
@@ -372,7 +404,7 @@
     color: #555050;
     text-align: left;
     font-family: "Roboto Condensed", sans-serif;
-    font-size: 1.875rem; }
+    font-size: 1.6rem; }
 
 .ultima-caja-info-precios {
   width: 90%;
@@ -426,20 +458,23 @@
   letter-spacing: .5rem;
   margin-top: 10rem;
   padding-left: 5rem;
-  text-shadow: 0.5625rem 0.3125rem 0.2938rem rgba(0, 0, 0, 0.25); }
+  text-shadow: 0.5625rem 0.3125rem 0.2938rem rgba(0, 0, 0, 0.2); }
 
 .main-contacto form {
   background-color: #e0dede;
   background-image: url(../assets/img/torre-form.png);
   background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position-x: right;
   padding: 3.125rem 3.4375rem;
   box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.2);
   border-radius: 1.25rem;
   text-align: center;
-  width: 40%;
+  width: 50%;
   margin: auto;
   margin-top: 5rem;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 12%, 14% 0); }
   .main-contacto form .p1-form, .main-contacto form .p2-form {
     color: #592159;
     font-size: 1.5625rem;
@@ -498,10 +533,13 @@
   text-align: center;
   color: #555050;
   text-transform: uppercase;
-  margin-top: 5rem;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
   font-weight: 700;
   line-height: normal;
   text-wrap: balance; }
+  .main-nosotros img {
+    margin-bottom: 4rem; }
 
 footer {
   font-size: 1.5rem;
@@ -542,6 +580,14 @@ footer {
     .header-principal .container-nav {
       padding-right: 1rem; } }
 
+@media (max-width: 1920px) {
+  .main-excursiones .excursiones-card h2, .main-excursiones .excursiones-card h3 {
+    width: 90%;
+    margin: auto; }
+  .main-excursiones .excursiones-card-2 h2, .main-excursiones .excursiones-card-2 h3 {
+    width: 90%;
+    margin: auto; } }
+
 @media (max-width: 1440px) {
   .header-principal {
     padding-bottom: 3rem; }
@@ -549,10 +595,26 @@ footer {
     gap: 5rem; }
   .main-index .container-excursiones {
     max-width: 85%; }
-  .section-nosotros h1 {
+  .main-excursiones .h1-excursiones {
+    font-size: 2rem; }
+  .main-excursiones .excursiones-card h2, .main-excursiones .excursiones-card h3 {
+    width: 90%;
+    margin: auto; }
+  .main-excursiones .excursiones-card .excursiones-card-info ul {
+    font-size: 1.5rem;
+    margin-right: 2rem; }
+  .main-excursiones .excursiones-card-2 h2, .main-excursiones .excursiones-card-2 h3 {
+    width: 90%;
+    margin: auto; }
+  .main-excursiones .excursiones-card-2 .excursiones-card-info-Derecha ul {
+    font-size: 1.5rem; }
+  .main-excursiones .excursiones-card-2 .excursiones-card-info-Derecha img {
+    width: 780px; }
+  .header-nosotros .section-nosotros h1 {
     padding-left: 0; }
   .main-nosotros {
-    width: 95%; } }
+    width: 95%;
+    margin-inline: auto; } }
 
 @media (max-width: 1230px) {
   .header-principal {
@@ -560,14 +622,27 @@ footer {
   .info-encabezado p {
     font-size: 1.8rem; }
   .main-index .div-excursiones {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .header-nosotros .section-nosotros h1 {
+    font-size: 6rem; }
+  .header-nosotros {
+    height: 60rem; } }
 
 @media (max-width: 1054px) {
-  .section-nosotros h1 {
-    font-size: 6rem; }
+  .header-nosotros .section-nosotros h1 {
+    font-size: 4rem;
+    margin-top: 5rem; }
+  .header-nosotros .section-nosotros .info-encabezado-nosotros {
+    padding: 0 4rem 18rem 4rem; }
+    .header-nosotros .section-nosotros .info-encabezado-nosotros p {
+      font-size: 2rem; }
   .main-nosotros {
     width: 90%;
-    margin: auto; } }
+    margin: auto;
+    font-size: 2rem; }
+    .main-nosotros img {
+      width: 65%;
+      margin-bottom: 2rem; } }
 
 @media (max-width: 1024px) {
   .container-nav {
@@ -577,11 +652,10 @@ footer {
   .main-precios .precios .precios-titulo {
     flex-direction: column;
     gap: 3rem; }
+  .main-contacto h2 {
+    font-size: 2rem; }
   .header-nosotros {
-    height: 60rem; }
-  .section-nosotros {
-    font-size: 7rem;
-    margin-top: 4rem; }
+    height: 55rem; }
   .info-encabezado-nosotros {
     margin-top: 3rem; }
     .info-encabezado-nosotros p {
@@ -628,8 +702,16 @@ footer {
     padding-left: 0;
     font-size: 1.8rem;
     text-align: center; }
+  .main-precios .precios {
+    padding: 3rem; }
+    .main-precios .precios p, .main-precios .precios li {
+      font-size: 1.4rem; }
+    .main-precios .precios .precios-titulo h2 {
+      font-size: 1.6rem; }
   .section-nosotros h1 {
     font-size: 5rem; }
+  .section-nosotros .info-encabezado-nosotros {
+    display: none; }
   .main-nosotros {
     width: 90%;
     margin: auto; } }
@@ -668,6 +750,8 @@ footer {
     align-items: center;
     gap: 3rem;
     margin-top: 2rem; }
+  .section-1 {
+    height: 15rem; }
   .main-index .section-excursiones {
     max-width: 95%;
     margin: auto; }
@@ -678,9 +762,9 @@ footer {
   .main-precios .precios {
     padding: 3rem; }
     .main-precios .precios p, .main-precios .precios li {
-      font-size: 1.6rem; }
+      font-size: 1.2rem; }
     .main-precios .precios .precios-titulo h2 {
-      font-size: 1.6rem; }
+      font-size: 1.4rem; }
   .main-precios .section-precios h1 {
     margin-top: 0;
     padding-left: 0;
@@ -692,8 +776,18 @@ footer {
     padding-left: .5rem; }
     .ultima-caja-info-precios .info-p-precios p {
       font-size: 1.2rem; }
+  .main-contacto h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0;
+    padding-left: 0; }
+  .main-contacto form {
+    width: 70%;
+    background-size: 30rem;
+    background-position-x: 5rem;
+    background-position-y: 15rem; }
   .header-nosotros {
-    height: 60rem; }
+    height: 55rem; }
   .section-nosotros h1 {
     font-size: 4rem;
     margin-top: 5rem; }
@@ -703,7 +797,7 @@ footer {
     font-size: 1.5rem; }
     .main-nosotros img {
       width: 70%; }
-  .info-pie-de-pag h2 {
+  footer .info-pie-de-pag h2 {
     font-size: 2rem; } }
 
 @media (max-width: 480px) {
@@ -722,10 +816,23 @@ footer {
   .main-index .div-excursiones {
     display: grid;
     grid-template-columns: repeat(1, 1fr); }
-  .info-pie-de-pag h2 {
+  .main-contacto h2 {
+    font-size: 1.3rem;
+    width: 70%;
+    margin: auto; }
+  .main-contacto form {
+    width: 80%;
+    background-position-x: 2rem;
+    background-position-y: 10rem;
+    clip-path: none; }
+    .main-contacto form .p1-form, .main-contacto form .p2-form {
+      font-size: 1rem; }
+    .main-contacto form .input-group-form label {
+      font-size: 1rem; }
+  footer .info-pie-de-pag h2 {
     font-size: 1.5rem;
     padding-top: 2rem; }
-  .iconos-pie-de-pag {
+  footer .info-pie-de-pag .iconos-pie-de-pag {
     margin-bottom: 2rem;
     margin-top: 1.5rem;
     gap: 3rem; }
@@ -744,15 +851,18 @@ footer {
   .main-precios .precios {
     padding: 3rem; }
     .main-precios .precios p, .main-precios .precios li {
-      font-size: 1.2rem;
+      font-size: 1rem;
       padding: 0; }
-    .main-precios .precios h2 {
-      font-size: 1.4rem; }
+    .main-precios .precios .precios-titulo h2 {
+      font-size: 1.2rem;
+      text-align: center; }
   .ultima-caja-info-precios .h2-medios-de-pago h2 {
     font-size: 1.6rem;
     margin-top: 5rem; }
   .ultima-caja-info-precios .info-p-precios p {
     font-size: 1rem; }
+  .main-contacto form .p1-form, .main-contacto form .p2-form {
+    text-align: center; }
   .header-nosotros {
     height: 45rem; }
   .section-nosotros h1 {
@@ -760,33 +870,33 @@ footer {
   .main-nosotros {
     margin-top: -8rem;
     font-size: 1.2rem; }
-  .wave-pie-de-pag {
+  footer .wave-pie-de-pag {
     display: none; }
-  .info-pie-de-pag h2 {
-    font-size: 1.5rem; }
-  .iconos-pie-de-pag {
-    margin-bottom: 2rem;
-    margin-top: 1.5rem;
-    gap: 3rem; }
-    .iconos-pie-de-pag img {
-      width: 2rem; }
-  footer p {
-    font-size: 1rem; } }
+  footer .info-pie-de-pag .iconos-pie-de-pag img {
+    width: 2rem;
+    height: 2rem; } }
 
 @media (max-width: 420px) {
   .main-index .barra-interes div {
     padding: 1.2rem 1rem; } }
 
 @media (max-width: 375px) {
-  .section-1 h1 {
-    font-size: 3.5rem; }
+  .section-1 {
+    height: 10rem; }
+    .section-1 h1 {
+      font-size: 3.5rem; }
   .main-index .barra-interes div {
     padding: 1.2rem 1rem; }
   .main-index .barra-interes input {
     font-size: 1.1rem; }
   .main-index .div-excursiones img {
     height: 20rem;
-    width: 20rem; } }
+    width: 20rem; }
+  .main-contacto form {
+    padding: 3.125rem 1.2rem;
+    background-image: none; }
+    .main-contacto form .input-group-form input {
+      padding: .5rem 1rem; } }
 
 @media (max-width: 372px) {
   .precio-valor img {
@@ -811,16 +921,21 @@ footer {
     font-size: 1rem; }
   .main-index .div-excursiones img {
     width: 18rem; }
-  .h2-precios {
+  .main-precios .precios .precios-titulo h2 {
     font-size: 1rem; }
-  .precio-valor p {
-    font-size: 1rem; }
-  .precios p, li {
-    font-size: 1rem; }
-  .h2-medios-de-pago {
+  .main-precios .precios .precio-valor p {
+    font-size: .8rem; }
+  .main-precios .precios p, .main-precios .precios li {
+    font-size: .8rem; }
+  .main-precios .ultima-caja-info-precios .h2-medios-de-pago {
     font-size: 1.4rem; }
-  .p-precios {
-    padding: .5rem;
+  .main-precios .ultima-caja-info-precios .info-p-precios {
+    padding: .4rem;
     line-height: 1.5rem; }
-  .iconos-pie-de-pag img {
-    width: 1.5rem; } }
+    .main-precios .ultima-caja-info-precios .info-p-precios img {
+      width: 2rem; }
+    .main-precios .ultima-caja-info-precios .info-p-precios p {
+      font-size: .8rem; }
+  footer .info-pie-de-pag .iconos-pie-de-pag img {
+    width: 1.5rem;
+    height: 1.5rem; } }

@@ -1,6 +1,8 @@
 @media(max-width:375px) {
     // INDEX //
     .section-1{
+        height: 10rem;
+        
         h1{
             font-size: 3.5rem;
         }
@@ -21,6 +23,21 @@
             img{
                 height: 20rem;
                 width: 20rem
+            }
+        }
+    }
+
+    // CONTACTO //
+
+    .main-contacto{
+        form{
+            padding: 3.125rem 1.2rem;
+            background-image: none;
+
+            .input-group-form{
+                input{
+                    padding: .5rem 1rem;
+                }
             }
         }
     }

@@ -60,6 +60,20 @@
                 text-align: center;
             }
         }
+
+        .precios{
+            padding: 3rem;
+    
+            p, li{
+                font-size: 1.4rem;
+            }
+
+            .precios-titulo{
+                h2{
+                    font-size: 1.6rem;
+                }
+            }
+        }
     }
     
 
@@ -69,6 +83,11 @@
         h1{
             font-size: 5rem;
         }
+
+        .info-encabezado-nosotros{
+            display: none;
+        }
+        
     }
 
     .main-nosotros{

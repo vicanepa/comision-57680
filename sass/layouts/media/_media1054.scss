@@ -1,13 +1,30 @@
 @media(max-width:1054px){
     // NOSOTROS //
-    .section-nosotros{
-        h1{
-            font-size: 6rem;
+    .header-nosotros{
+        .section-nosotros{
+            h1{
+                font-size: 4rem;
+                margin-top: 5rem;
+            }
+
+            .info-encabezado-nosotros{
+                padding: 0 4rem 18rem 4rem;
+                p{
+                    font-size: 2rem;
+                }
+            }
         }
-    } 
+    }
+    
 
     .main-nosotros{
         width: 90%;
         margin: auto;
+        font-size: 2rem;
+
+        img{
+            width: 65%;
+            margin-bottom: 2rem;
+        }
     }
 }

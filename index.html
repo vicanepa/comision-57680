@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
     <title>Inicio</title>
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header-principal">
         <div class="container-nav container">
-            <img  src="assets/img/logo-con-fondo.png" alt="Logo"/> 
+            <img src="assets/img/logo-con-fondo.png" alt="Logo principal de la pagina"/> 
             <nav > 
                 <ul>
                     <li><a href="#" class="activo">INICIO</a></li>
@@ -23,7 +26,7 @@
         </div>
         
         <section class="section-1" > 
-            <h1>VISITÁ PARIS</h1>
+            <h1 class="tracking-in-contract">VISITÁ PARIS</h1>
             <div class="info-encabezado">
                 <div>
                     <p>+6</p>
@@ -45,7 +48,7 @@
         <div class="barra-interes container"> 
             <div>
                 <input class="input-buscador" type="text" placeholder="¿Que excursion te interesa?"> 
-                <button class="btn-buscador"><img src="./assets/img/icon-lupa.png" alt=""></button>  
+                <button class="btn-buscador"><img src="./assets/img/icon-lupa.png" alt="icono de lupa"></button>  
             </div>
         </div>
         
@@ -53,50 +56,56 @@
             <div class="div-excursiones">
                 <article>
                     <div>
-                        <img style="height: 22.375rem" src="assets/img/Río-sena-en-París.png" alt="Imagen, rio sena" />
+                        <img data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom" style="height: 22.375rem" src="assets/img/Río-sena-en-París.png" alt="Imagen del rio Sena" />
                     </div>
-                    <a href="">PASEO EN BARCO POR EL SENA</a>
+                    <a href="./pages/excursiones.html#paseo">PASEO EN BARCO POR EL SENA</a>
                 </article>
 
                 <article>
                     <div>
-                        <img style="height: 22.375rem" src="assets/img/entrada-tercera-planta-torre-eif.png" alt="Imagen Torre Eiffel"/>
+                        <img data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom" style="height: 22.375rem" src="assets/img/entrada-tercera-planta-torre-eif.png" alt="Imagen Torre Eiffel"/>
                     </div>
-                    <a href="">ENTRADA A LA 3ª PLANTA DE LA TORRE EIFFEL</a>
+                    <a href="./pages/excursiones.html#entrada">ENTRADA A LA 3ª PLANTA DE LA TORRE EIFFEL</a>
                 </article>
 
                 <article>
                     <div>
-                        <img style="height: 22.375rem" src="assets/img/disneyland.png" alt="Imagen Disneyland Paris" />
+                        <img data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom" style="height: 22.375rem" src="assets/img/disneyland.png" alt="Imagen Disneyland Paris" />
                     </div>
-                    <a href="">EXCURSION A DISNEYLAND</a>
+                    <a href="./pages/excursiones.html#disney">EXCURSION A DISNEYLAND</a>
                 </article>
 
                 <article>
                     <div>
-                        <img style="height: 22.375rem" src="assets/img/excursion-mont-saint-michel-589x.png" alt="Imagen Mont Saint Mochel"/>
+                        <img data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom" style="height: 22.375rem" src="assets/img/excursion-mont-saint-michel-589x.png" alt="Imagen Mont Saint Mochel"/>
                     </div>
-                    <a href="">EXCURSION AL MONT SAINT MICHEL</a>
+                    <a  href="./pages/excursiones.html#MontSaint">EXCURSION AL MONT SAINT MICHEL</a>
                 </article>
 
                 <article>
                     <div>
-                        <img style="height: 22.375rem" src="assets/img/paseo-noct.png" alt="Imagen nocturna de Paris" />
+                        <img data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom" style="height: 22.375rem" src="assets/img/paseo-noct.png" alt="Imagen nocturna de Paris" />
                     </div>
-                    <a href="">TOUR NOCTURNO POR PARIS</a>
+                    <a href="./pages/excursiones.html#tour">TOUR NOCTURNO POR PARIS</a>
                 </article>
 
                 <article>
                     <div>
-                        <img style="height: 22.375rem" src="assets/img/museo-louvre.png" alt="Imagen La Gioconda, perteneciente al museo del Louvre"/>
+                        <img data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom" style="height: 22.375rem" src="assets/img/museo-louvre.png" alt="Imagen La Gioconda, perteneciente al museo del Louvre"/>
                     </div>
-                    <a href="">VITIA AL MUSEO DEL LOUVRE</a>
+                    <a href="./pages/excursiones.html#visita">VITIA AL MUSEO DEL LOUVRE</a>
                 </article>
             </article>
         </section>
     </main>
     <footer>
-        <img src="./assets/img/wave-pie-de-pag.png" alt="" class="wave-pie-de-pag">
+        <img src="./assets/img/wave-pie-de-pag.png" alt="wave pie de pagina" class="wave-pie-de-pag">
         <div class="info-pie-de-pag">
             <h2>SEGUINOS</h2>
             <aside>
@@ -110,5 +119,9 @@
         <p>Copyright &copy; 2024 Guetting to know Paris.</p>
         <p>Todos los derechos reservados</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

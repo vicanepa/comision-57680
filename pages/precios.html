@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Precios</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header class="header-secundario">
         <div class="container-nav container-precios">
-            <img style="width: 11.8125rem; height: 12.089rem" src="../assets/img/logo-con-fondo.png" alt="Logo"/> 
+            <img style="width: 11.8125rem; height: 12.089rem" src="../assets/img/logo-con-fondo.png" alt="Logo principal de la pagina"/> 
             <nav> 
                 <ul class="ul">
                     <li><a href="../index.html">INICIO</a></li>
@@ -25,13 +26,13 @@
         <section class="section-precios container-precios">
             <h1 class="h1-precios">Precios sujetos a modificaciones</h1>
     
-        <div class="precios">
+        <div data-aos="zoom-in" class="precios">
             <div class="precio-fondo"></div>
             <div class="precios-titulo">
                 <h2>Paseo en Barco por el Sena:</h2>
                 <div class="precio-valor">
                     <p>$20.000 ARS</p>
-                    <img src="../assets/img/Money flow.png" alt="">
+                    <img src="../assets/img/Money flow.png" alt="Icono moneda">
                 </div>
             </div>
             <p>Fechas y Horarios:</p>
@@ -44,12 +45,12 @@
             </ul>
         </div>
     
-        <div class="precios">
+        <div data-aos="zoom-in" class="precios">
             <div class="precios-titulo">
                 <h2>Entrada la 3ª planta de la Torre Eiffel</h2>
                 <div class="precio-valor">
                     <p>$80.000 ARS</p>
-                    <img src="../assets/img/Money flow.png" alt="">
+                    <img src="../assets/img/Money flow.png" alt="Icono moneda">
                 </div>
             </div>
             <p>Fechas y Horarios:</p>
@@ -59,12 +60,12 @@
             </ul>
         </div>
     
-        <div class="precios">
+        <div data-aos="zoom-in" class="precios">
             <div class="precios-titulo">
                 <h2>Excursion a Disneyland</h2>
                 <div class="precio-valor">
                     <p>$100.000 ARS</p>
-                    <img src="../assets/img/Money flow.png" alt="">
+                    <img src="../assets/img/Money flow.png" alt="Icono moneda">
                 </div>
             </div>
             <p>Fechas y Horarios:</p>
@@ -74,12 +75,12 @@
             </ul>    
         </div>
     
-        <div class="precios">
+        <div data-aos="zoom-in" class="precios">
             <div class="precios-titulo">
                 <h2>Excursion al Mont Saint Michel</h2>
                 <div class="precio-valor">
                     <p>$150.000 ARS</p>
-                    <img src="../assets/img/Money flow.png" alt="">
+                    <img src="../assets/img/Money flow.png" alt="Icono moneda">
                 </div>
             </div>
             <p>Fechas y Horarios:</p>
@@ -92,12 +93,12 @@
             </ul>
         </div>
     
-        <div class="precios">
+        <div data-aos="zoom-in" class="precios">
             <div class="precios-titulo">
                 <h2>Tour Nocturno por Paris</h2>
                 <div class="precio-valor">
                     <p>$10.000 ARS</p>
-                    <img src="../assets/img/Money flow.png" alt="">
+                    <img src="../assets/img/Money flow.png" alt="Icono moneda">
                 </div>
             </div>
             <p>Fechas y Horarios:</p>
@@ -108,12 +109,13 @@
                 <li>El recorrido arranca a las 20:00hs</li>
             </ul>    
         </div>
-        <div class="precios">
+
+        <div data-aos="zoom-in" class="precios">
             <div class="precios-titulo">
                 <h2>Visita guiada por el museo del Louvre</h2>
                 <div class="precio-valor">
                     <p>$70.000 ARS</p>
-                    <img src="../assets/img/Money flow.png" alt="">
+                    <img src="../assets/img/Money flow.png" alt="Icono moneda">
                 </div>
             </div>
             <p>Fechas y Horarios:</p>
@@ -128,7 +130,7 @@
         <section class="ultima-caja-info-precios">
             <div class="medios-de-pago">
                 <h2 class="h2-medios-de-pago">Medios de pago</h2>
-                <img src="../assets/img/medio-de-pago.png" alt="Medios de pago" class="img-medios-de-pago">
+                <img src="../assets/img/medio-de-pago.png" alt="Medios de pago" class="Imagen de medios de pagos">
             </div>
     
             <div>
@@ -152,21 +154,24 @@
             </div>
         </section>
     </main>
+    <footer>
+        <img src="../assets/img/wave-pie-de-pag.png" alt="Wave pie de pagina" class="wave-pie-de-pag">
+        <div class="info-pie-de-pag">
+            <h2>SEGUINOS</h2>
+            <aside>
+                <ol class="iconos-pie-de-pag">
+                    <a target="_blank" href="https://es-es.facebook.com/login.php/"><img src="../assets/img/face-icon.png" alt="icono enlace facebook"></a>
+                    <a target="_blank" href="https://www.instagram.com/"><img src="../assets/img/insta-logo.png" alt="icono enlace instagram"></a>
+                    <a target="_blank" href="https://www.youtube.com/"><img src="../assets/img/youtube.icon.png" alt="icono enlace youtube"></a>
+                </ol>
+            </aside>
+        </div>
+        <p>Copyright &copy; 2024 Guetting to know Paris.</p>
+        <p>Todos los derechos reservados</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-<!-- ..............PIE DE PAG......... -->
-<footer>
-    <img src="../assets/img/wave-pie-de-pag.png" alt="" class="wave-pie-de-pag">
-    <div class="info-pie-de-pag">
-        <h2>SEGUINOS</h2>
-        <aside>
-            <ol class="iconos-pie-de-pag">
-                <a target="_blank" href="https://es-es.facebook.com/login.php/"><img src="../assets/img/face-icon.png" alt="icono enlace facebook"></a>
-                <a target="_blank" href="https://www.instagram.com/"><img src="../assets/img/insta-logo.png" alt="icono enlace instagram"></a>
-                <a target="_blank" href="https://www.youtube.com/"><img src="../assets/img/youtube.icon.png" alt="icono enlace youtube"></a>
-            </ol>
-        </aside>
-    </div>
-    <p>Copyright &copy; 2024 Guetting to know Paris.</p>
-    <p>Todos los derechos reservados</p>
-</footer>
 </html>

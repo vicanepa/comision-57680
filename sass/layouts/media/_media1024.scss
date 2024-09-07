@@ -1,5 +1,62 @@
-
 @media(max-width:1024px) {
+    // EXCURSIONES //
+
+    .main-excursiones{
+
+        .excursiones-card{
+            h2{
+                font-size: 1.9rem;
+            }
+
+            h3{
+                font-size: 1.5rem;
+            }
+
+            .excursiones-card-info{
+                img{
+                    width: 55%;
+                }
+
+                ul{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        .excursiones-card-2{
+            h2{
+                font-size: 1.9rem;
+            }
+
+            h3{
+                font-size: 1.5rem;
+            }
+
+            .excursiones-card-info-Derecha{
+                img{
+                    width: 55%;
+                }
+
+                ul{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        .caja-info-excursiones{
+            button{
+                padding: 1rem 4rem 1rem 4rem;
+                font-size: 1.5rem;
+            }
+
+            .caja-mas-info{
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
     // PRECIOS //
 
     .container-nav{

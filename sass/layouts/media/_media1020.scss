@@ -33,7 +33,71 @@
         }
     }
 
-    
+    // EXCURSIONES //
+
+    .main-excursiones{
+
+        .excursiones-card{
+            .excursiones-card-info{
+                background: none;
+                margin: auto;
+                @include flex(column,none,center,center,none);
+
+                img{
+                    width: 95%;
+                    border-radius: 5rem;
+                    border-top-right-radius: none;
+                    border-bottom-right-radius: none;
+                    margin-top: 5rem;
+                    position: absolute;
+                }
+                ul{
+                    background: linear-gradient(to top, #242322de, #13143594);
+                    width: 95%;
+                    padding: 5rem 0 5rem 0;
+                    list-style: none;
+                    margin-top: 5rem;
+                    position: absolute;
+                    color: white;
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .excursiones-card-2{
+            .espacio-card-derecha{
+                padding-left: 0;
+            }
+
+            .excursiones-card-info-Derecha{
+                background: none;
+                margin: auto;
+                @include flex(column,none,center,center,none);
+
+                img{
+                    width: 95%;
+                    border-radius: 5rem;
+                    border-top-right-radius: none;
+                    border-bottom-right-radius: none;
+                    margin-top: 5rem;
+                    position: absolute;
+                }
+                ul{
+                    background: linear-gradient(to top, #242322de, #13143594);
+                    width: 95%;
+                    padding: 5rem 0 5rem 0;
+                    list-style: none;
+                    margin-top: 5rem;
+                    position: absolute;
+                    color: white;
+                    padding-left: 0;
+                }
+            }
+        }
+
+    }
+
+
 
     // PRECIOS //
 
@@ -73,6 +137,16 @@
                     font-size: 1.6rem;
                 }
             }
+        }
+    }
+    
+
+    // CONTACTO //
+    .main-contacto{
+        h1{
+            font-size: 2rem;
+            padding-left: 0;
+            text-align: center;
         }
     }
     

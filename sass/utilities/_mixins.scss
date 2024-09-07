@@ -7,10 +7,9 @@
     gap: $gap;
 }
 
-@mixin texto($size,$t-align,$color,$transform){
+@mixin texto($size,$t-align,$transform){
     font-size: $size;
     text-align: $t-align;
-    color: $color;
     text-transform: $transform;
 }
 

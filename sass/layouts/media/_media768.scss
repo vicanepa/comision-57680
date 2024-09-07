@@ -35,6 +35,23 @@
         }
     }
 
+    // EXCURSIONES //
+    .main-excursiones{
+        .h1-excursiones{
+            text-align: center;
+            padding-left: 0;
+            margin-top: 2rem;
+        }
+        
+        .caja-info-excursiones{
+            .caja-mas-info{
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
     // PRECIOS //
 
     .header-secundario{
@@ -86,6 +103,11 @@
     // CONTACTO //
 
     .main-contacto{
+        h1{
+            font-size: 1.8rem;
+            margin-top: 5rem;
+        }
+    
         h2{
             font-size: 1.5rem;
             text-align: center;

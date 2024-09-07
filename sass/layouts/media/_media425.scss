@@ -1,4 +1,87 @@
 @media(max-width:425px){
+    // INDEX //
+    .main-index{
+        .barra-interes{
+            div{
+                input{
+                    font-size: 1rem;
+                }
+                
+                button{
+                    margin-right: auto;
+    
+                    img{
+                        width: 25px;
+                    }
+                }
+            }
+        }
+    }
+    // EXCURSIONES //
+    .main-excursiones{
+        .h1-excursiones{
+            font-size: 1.8rem;
+            text-align: center;
+            margin-top: 0;
+            padding-left: 0;
+            padding: 1rem;
+            letter-spacing: .2rem;
+        }
+
+        .excursiones-card{
+            h2{
+                font-size: 1.6rem;
+            }
+
+            h3{
+                font-size: 1.3rem;
+            }
+
+            .excursiones-card-info{
+                img{
+                    height: 430px;
+                }
+
+                ul{
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .excursiones-card-2{
+            h2{
+                font-size: 1.6rem;
+            }
+
+            h3{
+                font-size: 1.3rem;
+            }
+
+            .excursiones-card-info-Derecha{
+                img{
+                    height: 430px;
+                }
+                
+                ul{
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .caja-info-excursiones{
+            button{
+                padding: 1rem 2rem 1rem 2rem;
+                font-size: 1.3rem;
+            }
+
+            .caja-mas-info{
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    
     // PRECIOS //
     .main-precios{
 
@@ -53,6 +136,11 @@
     // CONTACTO //
 
     .main-contacto{
+        h1{
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+
         form{
             .p1-form{
                 text-align: center;

@@ -1,5 +1,6 @@
 footer{
-    @include texto(1.5rem,center,white,none);
+    @include texto(1.5rem,center,none);
+    color: map-get($colores,color1);
     font-family: "Roboto Condensed", sans-serif;
     width: 100%;
     padding-bottom: 5rem;

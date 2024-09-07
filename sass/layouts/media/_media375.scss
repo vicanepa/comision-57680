@@ -24,12 +24,79 @@
                 height: 20rem;
                 width: 20rem
             }
+
+            a{
+                font-size: 1rem;
+            }
         }
     }
+
+    // EXCURSIONES//
+    .main-excursiones{
+        .h1-excursiones{
+            font-size: 1.6rem;
+            text-align: center;
+        }
+
+        .excursiones-card{
+            margin-top: 5rem;
+
+            h2{
+                font-size: 1.4rem;
+            }
+
+            h3{
+                font-size: 1.1rem;
+            }
+
+            .excursiones-card-info{
+                img{
+                    height: 400px;
+                    margin-top: 1rem;
+                }
+
+                ul{
+                    margin-top: 0;
+                    padding: 3rem 0 3rem 0;
+                }
+            }
+        }
+
+        .excursiones-card-2{
+            margin-top: 5rem;
+            
+            h2{
+                font-size: 1.4rem;
+            }
+
+            h3{
+                font-size: 1.1rem;
+            }
+
+            .excursiones-card-info-Derecha{
+                img{
+                    height: 400px;
+                    margin-top: 1rem;
+                }
+                
+                ul{
+                    margin-top: 0;
+                    padding: 3rem 0 3rem 0;
+                }
+            }
+        }
+    }
+
+
 
     // CONTACTO //
 
     .main-contacto{
+        
+        h1{
+            font-size: 1.4rem;
+        }
+        
         form{
             padding: 3.125rem 1.2rem;
             background-image: none;
